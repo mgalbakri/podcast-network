@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+content/audio-manifest.json
+public/audio/
+production/models
+production/cache
+production/out
+__pycache__/
+.DS_Store

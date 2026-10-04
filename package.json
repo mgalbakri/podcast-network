@@ -1,0 +1,47 @@
+{
+  "name": "the-listening-room",
+  "version": "1.0.0",
+  "description": "The Listening Room — a podcast network: browse by interest, listen, read along.",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/publish-audio.mjs",
+    "build": "next build",
+    "start": "next start",
+    "peaks": "python3 scripts/make-peaks.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgalbakri/podcast-network.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgalbakri/podcast-network/issues"
+  },
+  "homepage": "https://github.com/mgalbakri/podcast-network#readme",
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/literata": "^5.3.0",
+    "@vercel/blob": "^2.8.0",
+    "gray-matter": "^4.0.3",
+    "katex": "^0.16.47",
+    "next": "^15.5.27",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "rehype-katex": "^7.0.1",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

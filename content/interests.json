@@ -1,0 +1,11 @@
+[
+  { "slug": "ai", "name": "AI & Machine Learning", "blurb": "How learning machines work, fail, and get better.", "hue": "#2F5D8A" },
+  { "slug": "science", "name": "Science & Research", "blurb": "Experiments, evidence, and how findings are earned.", "hue": "#2E7D6B" },
+  { "slug": "math", "name": "Mathematics & Statistics", "blurb": "The equations and numbers behind the stories, said out loud.", "hue": "#6A4C93" },
+  { "slug": "history", "name": "History of Ideas", "blurb": "Where today's ideas came from, and who saw them first.", "hue": "#9A6B1F" },
+  { "slug": "aviation", "name": "Aviation", "blurb": "Flight, fuel, airports, and the people who keep them running.", "hue": "#1F6F8B" },
+  { "slug": "business", "name": "Business & Leadership", "blurb": "Running organisations, family enterprises, and teams.", "hue": "#8A3B2E" },
+  { "slug": "finance", "name": "Finance & Investing", "blurb": "Markets, portfolios, and long-term money decisions.", "hue": "#3F6B2A" },
+  { "slug": "law", "name": "Law & Governance", "blurb": "Contracts, audit, and how institutions hold together.", "hue": "#4A4F63" },
+  { "slug": "health", "name": "Health & Performance", "blurb": "Training, nutrition, and staying capable for longer.", "hue": "#A23E62" }
+]

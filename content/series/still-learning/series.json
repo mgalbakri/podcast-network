@@ -1,0 +1,41 @@
+{
+  "slug": "still-learning",
+  "title": "Still Learning",
+  "tagline": "Why machines that keep learning slowly lose the ability to learn, and how a fresh start fixes it.",
+  "description": "A ten-part documentary investigation into one PhD thesis. Today's neural networks learn once and then freeze. Ask them to keep learning and they gradually lose the ability to learn at all. Correspondent Miriam Okafor and explainers Dev Raman and Lucía Ferreira follow the evidence through toy experiments, forty years of missed warnings, and a cure: periodically giving small parts of the network a fresh start. Every section, figure and equation of the thesis is covered, and each episode comes with a full transcript and show notes.",
+  "interests": ["ai", "science", "math", "history"],
+  "language": "en",
+  "author": "The Listening Room",
+  "owner": { "name": "MGB", "email": "mgalbakri@gmail.com" },
+  "explicit": false,
+  "category": "Science",
+  "subcategory": "Mathematics",
+  "palette": { "base": "#17202B", "accent": "#D3263A", "light": "#E6EAEE" },
+  "cast": [
+    { "name": "Miriam Okafor", "role": "Lead correspondent and narrator" },
+    { "name": "Dev Raman", "role": "Co-host and explainer" },
+    { "name": "Lucía Ferreira", "role": "Co-host and lab lead" },
+    { "name": "Nora", "role": "A neural network" },
+    { "name": "The Thesis", "role": "Reads the thesis, adapted" },
+    { "name": "The Auditor", "role": "Flags every slip in the record" },
+    { "name": "The Archivist", "role": "Voice of the historical record" }
+  ],
+  "experts": [
+    { "name": "Dr. Hana Lindqvist", "role": "Computational neuroscience" },
+    { "name": "Prof. Tomás Adeyemi", "role": "Optimization theory" },
+    { "name": "Dr. Priya Venkataraman", "role": "Large-scale ML engineering" },
+    { "name": "Capt. Rashid Al-Harbi", "role": "Retired airline training captain" },
+    { "name": "Dr. Sun-Hee Park", "role": "Statistics and experimental design" },
+    { "name": "Dr. Elena Marchetti", "role": "History of AI" }
+  ],
+  "source": {
+    "title": "Selective Reinitialization Algorithms for Preventing Plasticity Loss in Artificial Neural Networks",
+    "author": "Juan Fernando Hernandez Garcia",
+    "institution": "University of Alberta",
+    "year": 2026,
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "code": "https://github.com/JFernando4/plasticity-via-reinit"
+  },
+  "disclaimer": "All hosts, actors and experts in this series are fictional, and their voices are synthetic. The thesis author and the researchers he cites are named but never voiced."
+}

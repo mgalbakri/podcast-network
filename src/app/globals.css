@@ -1,0 +1,172 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource-variable/literata';
+@import '@fontsource-variable/literata/wght-italic.css';
+@import 'katex/dist/katex.min.css';
+
+@custom-variant dark (@media (prefers-color-scheme: dark));
+
+@theme {
+  --font-sans: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Literata Variable', Georgia, serif;
+
+  --color-room: #e6eaee;
+  --color-panel: #f6f8f9;
+  --color-ink: #17202b;
+  --color-slate: #566273;
+  --color-line: #c6ced6;
+  --color-onair: #d3263a;
+  --color-signal: #2f5d8a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-room: #12171d;
+    --color-panel: #1a2129;
+    --color-ink: #e7ebef;
+    --color-slate: #9aa6b2;
+    --color-line: #2c3641;
+    --color-onair: #ff4a5c;
+    --color-signal: #8db6e0;
+  }
+}
+
+@layer base {
+  html {
+    background: var(--color-room);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100dvh;
+  }
+  a {
+    color: inherit;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-signal) 30%, transparent);
+  }
+}
+
+@layer components {
+  .link {
+    color: var(--color-signal);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .link:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  /* Long-form reading: series descriptions, transcripts, show notes */
+  .prose-room {
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    line-height: 1.72;
+    max-width: 68ch;
+  }
+  .prose-room p,
+  .prose-room ul,
+  .prose-room ol,
+  .prose-room table,
+  .prose-room pre,
+  .prose-room blockquote {
+    margin-block: 0.9em;
+  }
+  .prose-room h3 {
+    font-family: var(--font-sans);
+    font-weight: 650;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    margin-top: 2.2em;
+    margin-bottom: 0.4em;
+  }
+  .prose-room h4 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.08rem;
+    margin-top: 1.8em;
+    margin-bottom: 0.3em;
+  }
+  .prose-room ul {
+    list-style: disc;
+    padding-inline-start: 1.25em;
+  }
+  .prose-room ol {
+    list-style: decimal;
+    padding-inline-start: 1.4em;
+  }
+  .prose-room li {
+    margin-block: 0.3em;
+  }
+  .prose-room a {
+    color: var(--color-signal);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-room strong {
+    font-weight: 650;
+  }
+  .prose-room code {
+    font-size: 0.9em;
+    background: color-mix(in oklab, var(--color-line) 45%, transparent);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+  }
+  .prose-room table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    line-height: 1.45;
+    max-width: 100%;
+  }
+  .prose-room th,
+  .prose-room td {
+    border-bottom: 1px solid var(--color-line);
+    padding: 0.5em 0.9em 0.5em 0;
+    text-align: start;
+    vertical-align: top;
+  }
+  .prose-room th {
+    font-weight: 650;
+    border-bottom-color: var(--color-ink);
+  }
+  .prose-room .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-block: 0.4em;
+  }
+
+  /* Transcript */
+  .transcript-line {
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    margin-block: 0.85rem;
+  }
+  @media (max-width: 640px) {
+    .transcript-line {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.1rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
