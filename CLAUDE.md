@@ -13,6 +13,14 @@ Owner: MGB. Communication style: direct, BLUF-first. Prefer complete, deployable
 - Audio: source MP3s in `media/<series>/`, uploaded to Vercel Blob by `scripts/publish-audio.mjs` (runs as `prebuild`)
 - Hosting: Vercel (team "MGB's projects"), auto-deploys on push to `main`
 
+## Live setup
+
+- Site: https://the-listening-room-ten.vercel.app (Vercel project `the-listening-room`, `prj_5sMkcGlx7x6eoIBSBDnLb9vCdpnr`, team `team_JlZwo4jjeUI8hth2Ea9oOIJU`)
+- Feed: https://the-listening-room-ten.vercel.app/series/still-learning/feed.xml
+- Audio: Vercel Blob store `the-listening-room-blob` (public, Frankfurt `fra1`), connected to the project; `BLOB_READ_WRITE_TOKEN` is set in Production and Preview
+- Hobby plan limits that matter: Blob 1 GB storage and 10 GB transfer per month (an episode is ~26 MB at 64 kbps mono)
+- The Vercel MCP connector can read and redeploy but gets 403 on creating projects or stores; do those in the dashboard
+
 ## Content model
 
 ```

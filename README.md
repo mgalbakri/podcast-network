@@ -2,6 +2,8 @@
 
 A podcast network site. Listeners browse shows by interest, play episodes in a player that keeps going between pages, and read along with full transcripts and show notes. Each show also has a podcast feed for Apple Podcasts, Overcast and other apps.
 
+Live at **https://the-listening-room-ten.vercel.app**.
+
 First show: **Still Learning**, a ten-part documentary on why neural networks that keep learning lose the ability to learn.
 
 ## Run it
